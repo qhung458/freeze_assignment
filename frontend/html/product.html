@@ -4,150 +4,189 @@
     <meta charset="UTF-8">
     <title>Trang chủ</title>
     <link rel="icon" href="../../images/favicon.ico">
+    <link href="../css/style.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
     <meta name="viewport" content="device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-    <a id ="head" href="main.html"><img src="../../images/logo.png" alt="Freeze" title="Freeze"></a>
-    <nav>
-        <a href="main.html" target="_seft">Trang chủ</a>
-        <a href="introduce.html" target="_seft">Giới thiệu</a>
-        <a href="product.html" target="_seft">Sản phẩm</a>
-        <a href="news.html" target="_seft">Tin tức</a>
-        <a href="login.html" target="_seft">Đăng nhập</a>
-        <a href="register.html" target="_seft">Đăng ký</a>
-        <a href="contact.html" target="_seft">Liên hệ</a>
+    <a id ="logo" href="main.html"><img src="../../images/logo.png" alt="Freeze" title="Freeze"></a>
+    <img id ="header-img-1" src="../../images/css/header-img1.png">
+    <img id ="header-img-2" src="../../images/css/header-img2.png">
+    <img id ="header-img-3" src="../../images/css/header-img3.png">
+
+    <nav id="forward-tab">
+        <a class="forward" href="main.html">Trang chủ</a>
+        <a class="forward" href="introduce.html">Giới thiệu</a>
+        <a class="forward" href="product.html">Sản phẩm</a>
+        <a class="forward" href="news.html">Tin tức</a>
+        <a class="forward" href="login.html">Đăng nhập</a>
+        <a class="forward" href="register.html">Đăng ký</a>
+        <a class="forward" href="contact.html">Liên hệ</a>
     </nav>
+
+    <div id="search-area">
+        <form action="" method="get">
+            <input type ="text" id ="search" name="search" placeholder="Yaourd dâu...">
+            <button type="submit" id="button-search" class="button-shopping">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button type="submit" id="button-cart" class="button-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </form>
+    </div>
 </header>
 <main>
     <article>
-        <section>
-            <h1>Sản Phẩm Truyền Thống</h1>
-            <!--Ngăn cách ảnh -->
+        <h1>Sản Phẩm Truyền Thống</h1>
+        <section class="display-product">
 
+            <!--Ngăn cách ảnh -->
+            <div class="product">
             <img src="../../images/sanpham/kiwi.jpg" alt="Kem" title ="Kiwi" loading ="lazy">
             <h2>Sữa Chua Vị Kiwi</h2>
             <p>
                 Hương vị thơm ngon của trái Kiwi xanh, nổi tiếng của đất nước New Zealand có trong Sữa chua vị Kiwi xanh đem đến một món ăn nhẹ Siêu ngon và tốt cho hệ tiêu hóa.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p><span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size ="3">
                                 <button>Đặt hàng</button>
-                        </span>
-            </p>
+                </span>
+
+            </div>
 
             <!--Ngăn cách ảnh -->
+            <div class="product">
             <img src="../../images/sanpham/mango.jpg" alt="Kem" title ="Mango" loading ="lazy">
             <h2>Sữa Chua Vị Xoài</h2>
             <p>
                 Sữa chua xoài thích hợp cho mọi lứa tuổi, vì vậy hãy để cả gia đình quây quần bên nhau cùng thưởng thức món ăn thơm ngon, bổ dưỡng này.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p>  <span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size="3">
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
+
+            </div>
 
             <!--Ngăn cách ảnh -->
+            <div class="product">
             <img src="../../images/sanpham/cantaloupe.jpg" alt="Kem" title ="Cantaloupe" loading ="lazy">
             <h2>Sữa Chua Vị Dưa Lưới</h2>
             <p>
                 Trong dưa lưới chứa rất nhiều vitamin C có tác dụng làm đẹp da hiệu quả. Phụ nữ ăn sinh tố dưa lưới thường xuyên sẽ có làn da mịn màng.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p><span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size =3>
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
 
+            </div>
 
         </section>
-        <section>
-            <h1>Sản Phẩm Mới</h1>
-            <!--Ngăn cách ảnh -->
 
+        <h1>Sản Phẩm Mới</h1>
+        <section class="display-product">
+
+            <!--Ngăn cách ảnh -->
+            <div class="product">
             <img src="../../images/sanpham/blackberry.jpg" alt="Kem" title ="Black Berry" loading ="lazy">
             <h2>Sữa Chua Vị Mâm Xôi</h2>
             <p>
                 Quả mâm xôi là loại quả ăn họ hoa hồng, có nguồn gốc từ châu Âu, Bắc Á và được trồng ở các vùng ôn đới trên toàn thế giới. Có nhiều loại, bao gồm đen, tím và vàng.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p> <span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size ="3">
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
 
+            </div>
             <!--Ngăn cách ảnh -->
+
+            <div class="product">
             <img src="../../images/sanpham/strawberry.jpg" alt="Kem" title ="Straw berry" loading ="lazy">
             <h2>Sữa Chua Vị Việt Quất</h2>
             <p>
                 Quả việt quất chứa các dưỡng chất tốt cho sức khỏe như chất xơ, kali, folate, vitamin C và vitamin B6 (những chất hỗ trợ rất tốt cho sức khỏe của tim).
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p> <span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size =3>
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
 
+            </div>
             <!--Ngăn cách ảnh -->
+
+            <div class="product">
             <img src="../../images/sanpham/blueberry.jpg" alt="Kem" title ="Blue berry" loading ="lazy">
             <h2>Sữa Chua Vị Dâu Tây</h2>
             <p>
                 Dâu tây là một loài cây thân thảo có thân ngắn và các chiếc lá mọc gần với nhau. Lá có nhiều gai, bề mặt lá có nhiều lông tơ và kích thước lá có thể khác nhau ở từng giống.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p>   <span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size="3">
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
+            </div>
         </section>
-        <section>
-            <h1>Sản Phẩm Trái Cây</h1>
-            <!--Ngăn cách ảnh -->
+        <h1>Sản Phẩm Trái Cây</h1>
+        <section class="display-product">
 
+            <!--Ngăn cách ảnh -->
+            <div class="product">>
             <img src="../../images/sanpham/grapes.jpg" alt="Kem" title ="Grapes" loading ="lazy">
             <h2>Sữa Chua Vị Bưởi</h2>
             <p>
                 Bưởi là một loại quả thuộc chi Cam chanh có nguồn gốc từ Đông Nam Á. Bưởi tiếng Anh gọi là Pomelo, tuy nhiên nhiều từ điển ở Việt Nam lại dịch thành grapefruit.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p><span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size ="3">
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
 
+            </div>
             <!--Ngăn cách ảnh -->
+
+
+            <div class="product">>
             <img src="../../images/sanpham/green-apple.jpg" alt="Kem" title ="Green apple" loading ="lazy">
             <h2>Sữa Chua Vị Táo Xanh</h2>
             <p>
                 Táo xanh có hàm lượng chất xơ cao giúp tăng cường quá trình trao đổi chất của cơ thể. Bên cạnh đó, chất xơ còn giúp quá trình giải độc gan và hệ tiêu hóa.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p> <span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size =3>
                                 <button>Đặt hàng</button>
-                        </span>
-            </p>
+                </span>
 
+            </div>
             <!--Ngăn cách ảnh -->
+
+            <div class="product">>
             <img src="../../images/sanpham/pineapple.jpg" alt="Kem" title ="Pineapple" loading ="lazy">
             <h2>Sữa Chua Vị Dứa</h2>
             <p>
                 Dứa có các tên gọi khác như là khóm, thơm, khớm, gai hoặc huyền nương. Đây là một loại quả nhiệt đới. Dứa là cây bản địa của các nước Nam Mỹ.
                 <a href="https://www.bachhoaxanh.com/kinh-nghiem-hay/top-17-thuong-hieu-sua-chua-ngon-chat-luong-tren-thi-truong-hien-nay-1572967" target="_blank">Xem chi tiết</a>
-                <span>
+            </p><span>
                                 Số lượng:
                                 <input type="number" min="0" max="100" name="kiwi" size="3">
                                 <button>Đặt hàng</button>
                         </span>
-            </p>
+
+            </div>
         </section>
     </article>
 </main>
@@ -155,11 +194,19 @@
     <p>
         <b>
             &copy 2021 Bản quyền thuộc về FreeezeVN.
-            <a href="https://www.facebook.com/conbotmanhnhatlichsu/?locale=vi_VN" target ="_seft">Facebook</a>
-            <a href="https://x.com/haihuocvabadao" target ="_seft">Twitter</a>
-            <a href="https://www.pinterest.com/phamthinhung10111973/s%E1%BB%AFa-chua/" target ="_seft">pinterest</a>
-            <a href="#head">Về đầu trang</a>
+            <a class="sponsor-icon" href="https://www.facebook.com/conbotmanhnhatlichsu/?locale=vi_VN" target ="_seft">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="sponsor-icon" href="https://x.com/haihuocvabadao" target ="_seft">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="sponsor-icon" href="https://www.pinterest.com/phamthinhung10111973/s%E1%BB%AFa-chua/" target ="_seft">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
         </b>
+        <a href="#logo" >
+            <img  id="logo-footer" src="../../images/css/top.png" alt="Logo" title="Logo" loading="lazy"/>
+        </a>
     </p>
 </footer>
 </body>

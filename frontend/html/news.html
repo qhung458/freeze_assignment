@@ -4,20 +4,41 @@
     <meta charset="UTF-8">
     <title>Trang chủ</title>
     <link rel="icon" href="../../images/favicon.ico">
+    <link href="../css/style.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
     <meta name="viewport" content="device-width, initial-scale=1.0">
 </head>
 <body>
 <header>
-    <a id ="head" href="main.html"><img src="../../images/logo.png" alt="Freeze" title="Freeze"></a>
-    <nav>
-        <a href="main.html" target="_seft">Trang chủ</a>
-        <a href="introduce.html" target="_seft">Giới thiệu</a>
-        <a href="product.html" target="_seft">Sản phẩm</a>
-        <a href="news.html" target="_seft">Tin tức</a>
-        <a href="login.html" target="_seft">Đăng nhập</a>
-        <a href="register.html" target="_seft">Đăng ký</a>
-        <a href="contact.html" target="_seft">Liên hệ</a>
+    <a id ="logo" href="main.html"><img src="../../images/logo.png" alt="Freeze" title="Freeze"></a>
+    <img id ="header-img-1" src="../../images/css/header-img1.png">
+    <img id ="header-img-2" src="../../images/css/header-img2.png">
+    <img id ="header-img-3" src="../../images/css/header-img3.png">
+
+    <nav id="forward-tab">
+        <a class="forward" href="main.html">Trang chủ</a>
+        <a class="forward" href="introduce.html">Giới thiệu</a>
+        <a class="forward" href="product.html">Sản phẩm</a>
+        <a class="forward" href="news.html">Tin tức</a>
+        <a class="forward" href="login.html">Đăng nhập</a>
+        <a class="forward" href="register.html">Đăng ký</a>
+        <a class="forward" href="contact.html">Liên hệ</a>
     </nav>
+
+    <div id="search-area">
+        <form action="" method="get">
+            <input type ="text" id ="search" name="search" placeholder="Yaourd dâu...">
+            <button type="submit" id="button-search" class="button-shopping">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button type="submit" id="button-cart" class="button-shopping">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </button>
+        </form>
+    </div>
 </header>
 <main>
     <article>
@@ -100,11 +121,19 @@
     <p>
         <b>
             &copy 2021 Bản quyền thuộc về FreeezeVN.
-            <a href="https://www.facebook.com/conbotmanhnhatlichsu/?locale=vi_VN" target ="_seft">Facebook</a>
-            <a href="https://x.com/haihuocvabadao" target ="_seft">Twitter</a>
-            <a href="https://www.pinterest.com/phamthinhung10111973/s%E1%BB%AFa-chua/" target ="_seft">pinterest</a>
-            <a href="#head">Về đầu trang</a>
+            <a class="sponsor-icon" href="https://www.facebook.com/conbotmanhnhatlichsu/?locale=vi_VN" target ="_seft">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="sponsor-icon" href="https://x.com/haihuocvabadao" target ="_seft">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="sponsor-icon" href="https://www.pinterest.com/phamthinhung10111973/s%E1%BB%AFa-chua/" target ="_seft">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
         </b>
+        <a href="#logo" >
+            <img  id="logo-footer" src="../../images/css/top.png" alt="Logo" title="Logo" loading="lazy"/>
+        </a>
     </p>
 </footer>
 </body>
