@@ -320,5 +320,170 @@ p,li{
     text-align:center;
 }
 
+/* ******************************* Bố cục ****************************************/
+
+
+body{
+    display:grid;
+    grid-template-areas:"header-cell" "nav-cell" "main-cell" "footer-cell";
+}
+
+header{
+    grid-area:header-cell;
+}
+nav{ grid-area:nav-cell; }
+
+footer{ grid-area:footer-cell; }
+main{
+    grid-area:main-cell;
+    display: grid;
+    border: 1px solid #ccc7c8;
+    border-radius:5px;
+    background-color: #ffffff;
+    padding:0 5px;
+    grid-template-areas: "aside-left" "article" "aside-right"
+}
+
+
+/* Trang chu   */
+#article-at-main{
+    grid-area:article;
+}
+
+#aside-at-main-left{
+    grid-area:aside-left;
+    margin:2px;
+    padding:5px;
+    color:#000000;
+    text-align:center;
+}
+
+#aside-at-main-right{
+    grid-area:aside-right;
+    margin:2px;
+    padding:5px;
+    color:#000000;
+    text-align:center;
+}
+
+
+/* Tin tức   */
+#main-news{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas:"aside-news article-news article-news article-news";
+}
+
+#article-at-news{
+    grid-area: article-news;
+}
+#aside-at-news-left{
+    grid-area: aside-news;
+    padding:3px;
+    top:50px
+}
+#aside-at-news-right{
+    display:none;
+}
+
+#img-at-end-news{
+    width:100%;
+    height:150px;
+}
+
+#container-at-news{
+    display:flex;
+    flex-direction:column;
+}
+
+.phares-news{
+    display:flex;
+    flex-direction:row;
+}
+
+#article-at-news h2{
+    text-align:left;
+}
+
+#article-at-news .img-news{
+    width:25%;
+    height:25%;
+    order:1;
+    border-radius:5px;
+}
+
+
+/* Gioi thieu */
+
+#main-introduce{
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "article article article aside"
+}
+
+#article-introduce{
+    grid-area: article;
+}
+
+#aside-introduce-right{
+    grid-area:aside;
+}
+#aside-introduce-left{
+    display:none;
+}
+
+#article-introduce > img{
+    width:100%;
+}
+
+#article-introduce h2{
+    text-align:center;
+}
+
+
+/*  Responsive device */
+
+@media screen and (max-width:760px) {
+    #main-news{
+        display:grid;
+        grid-template-columns:1fr;
+        grid-template-areas:
+                "article-news"
+                "aside-news";
+    }
+    #article-at-news{
+        grid-area: article-news;
+    }
+    #aside-at-news-left{
+        grid-area: aside-news;
+        padding:3px;
+    }
+
+    #main-introduce{
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "article"
+                             "aside"
+    }
+
+    #article-introduce{
+        grid-area: article;
+    }
+
+    #aside-introduce-right{
+        grid-area:aside;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
