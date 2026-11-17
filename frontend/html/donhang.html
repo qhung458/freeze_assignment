@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Trang chủ</title>
+    <link rel="icon" href="../../images/favicon.ico">
+    <link href="../css/style.css" rel="stylesheet">
+    <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    >
+    <script type="text/javascript" src="../js/script.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<header>
+    <a id ="logo" href="main.html"><img src="../../images/logo.png" alt="Freeze" title="Freeze"></a>
+    <img id ="header-img-1" src="../../images/css/header-img1.png">
+    <img id ="header-img-2" src="../../images/css/header-img2.png">
+    <img id ="header-img-3" src="../../images/css/header-img3.png">
+
+    <nav id="forward-tab">
+        <a class="forward" href="main.html">Trang chủ</a>
+        <a class="forward" href="introduce.html">Giới thiệu</a>
+        <a class="forward" href="product.html">Sản phẩm</a>
+        <a class="forward" href="news.html">Tin tức</a>
+        <a class="forward" href="login.html">Đăng nhập</a>
+        <a class="forward" href="register.html">Đăng ký</a>
+        <a class="forward" href="contact.html">Liên hệ</a>
+    </nav>
+
+    <div id="search-area">
+        <form id="search-form" action="tim_kiem.html" method="get">
+            <input type ="text" id ="search" name="search" placeholder="Yaourd dâu...">
+            <button type="submit" id="button-search" class="button-shopping">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <a href="donhang.html">
+                <button type="button" id="button-cart" class="button-shopping"> 
+                <i class="fa-solid fa-cart-shopping"></i>
+                </button>
+            </a>
+        </form>
+    </div>
+</header>
+<main>
+    <h1>
+        CHI TIẾT ĐƠN HÀNG
+    </h1>
+    <table border=1px id="bang-don-hang">
+        <thead>
+            <tr>
+                <th>Hình SP</th>
+                <th>Tên SP</th>
+                <th>Số lượng</th>
+                <th>Giá</th>
+                <th>Thành Tiền</th>
+                <th></th>
+            </tr>
+        </thead>
+
+        <!-- JavaScript sẽ tự động chèn các dòng sản phẩm vào đây -->
+        <tbody id="danh-sach-sp"></tbody>
+
+        <!-- Phần tổng kết tiền tự động cập nhật -->
+        <tfoot>
+            <tr>
+                <td colspan="6" style="text-align: right;">Tổng thành tiền (A) = <span id="tong-a">0 đ</span></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: right;">Chiết Khấu (B) = 0.1 x A = <span id="chiet-khau-b">0 đ</span></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: right;">Thuế (C) = 10% x (A - B) = <span id="thue-c">0 đ</span></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: right;">Tổng đơn hàng = A - B + C = <span id="tong-don-hang">0 đ</span></td>
+            </tr>
+            <tr>
+                <td colspan="6" style="text-align: center;">
+                    <button onclick="xacNhanDonHang()">Xác Nhận Đơn Hàng</button>
+                </td>
+            </tr>
+        </tfoot>
+    </table>
+</main>
+<footer>
+    <p>
+        <b>
+            &copy 2021 Bản quyền thuộc về FreeezeVN.
+            <a class="sponsor-icon" href="https://www.facebook.com/conbotmanhnhatlichsu/?locale=vi_VN" target ="_seft">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a class="sponsor-icon" href="https://x.com/haihuocvabadao" target ="_seft">
+                <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a class="sponsor-icon" href="https://www.pinterest.com/phamthinhung10111973/s%E1%BB%AFa-chua/" target ="_seft">
+                <i class="fa-brands fa-pinterest"></i>
+            </a>
+        </b>
+        
+        <a href="#logo" >
+            <img  id="logo-footer" src="../../images/css/top.png" alt="Logo" title="Logo" loading="lazy"/>
+        </a>
+    </p>
+</footer>
+</body>
+</html>
